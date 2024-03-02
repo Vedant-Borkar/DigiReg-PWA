@@ -94,7 +94,7 @@ const NavBar = () => {
             <ul className={scrolling ? 'navList whiteme' : 'navList'}>
               <li>
                 <Link to="home" smooth={true} duration={500}>
-                  Home
+                  Homie
                   </Link>
               </li>
               <li>
