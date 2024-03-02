@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
 }
 header {
-    position: fixed;
+    position:fixed;
     display: flex;
     justify-content: flex-end;
     flex-flow: row;
@@ -18,10 +18,10 @@ header {
     color: #dbdbdb !important;
   }
   .scrolled {
-    color: #dbdbdb !important; /* Change to your desired color */
-     background: rgba(255, 255, 255, 0.1) !important;
+    color: #dbdbdb ; /* Change to your desired color */
+     background: rgba(255, 255, 255, 0.1) ;
      /* background: rgb(48,34,35); */
-     background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, rgba(177,68,59,1) 100%);
+     background: linear-gradient(180deg, rgb(23, 86, 141) 0%, rgb(35, 35, 149) 16%, rgb(136, 4, 138) 100%);
          backdrop-filter: blur(4px); 
          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
          /* padding:20px; */
@@ -172,16 +172,17 @@ header {
     padding: 30px 10px;
     margin-bottom: 0px !important;
 }
-.glass {
-    /* background: rgba(255, 255, 255, 0.1); */
+/* .glass {
+    background: rgba(255, 255, 255, 0.1);
     background: rgb(48,34,35);
 background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, rgba(177,68,59,1) 100%);
     backdrop-filter: blur(4px); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
-    /* padding:20px; */
+    padding:20px;
     border-radius: 0px !important;
   
-  }
+  } */
+  
   .navList li{
     padding-bottom: 4px;
     font-weight: 700;

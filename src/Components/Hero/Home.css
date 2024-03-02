@@ -21,10 +21,13 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #B1443B; 
   }
+.carouselImg{
+    height: 111vh;
+}
 .heroSection{
     width: 100vw;
+    height: 111vh;
     background-color:#B1443B;
-    background-image: url(../../Assets/desktopwallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -170,7 +173,7 @@ background: #873933;
 
     .heroSection{
         /* height:106%; */
-        background-image: url("../../Assets/desktopwallpaper.png");
+        
         width:100%;
     }
 
@@ -204,7 +207,6 @@ background: #873933;
     }
  
      .heroSection{
-         background-image: url("../../Assets/mobilewallpaper.png");
          width:100%;
      }
      .timerDiv{
@@ -263,7 +265,6 @@ background: #873933;
     }
 
     .heroSection{
-        background-image: url("../../Assets/mobilewallpaper.png");
         width:100%;
     }
     .timerDiv{
@@ -324,7 +325,6 @@ background: #873933;
     }
 
     .heroSection{
-        background-image: url("../../Assets/mobilewallpaper.png");
         width:100%;
     }
     .timerDiv{
