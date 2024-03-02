@@ -65,7 +65,7 @@ const CountdownTimer = ({ targetDate }) => {
   return (
     <div>
       <div className="timerDiv">
-        <h1>Journey into the realms of code starts in:</h1>
+        <h1>Journey into the real of code starts in:</h1>
         <div className="timerBox">
           <div className="indvSection">
             <div className="timerIndvBox glassTimer">
