@@ -36,7 +36,7 @@ const Home = () => {
         <Carousel className="carousel" infiniteLoop={true}>
           <div>
             <img src={Icon1} alt="" className="carouselImg" />
-            <p className="legend">Legend 1</p>
+            <p className="legend">Legend 0</p>
           </div>
           <div>
             <img src={Icon2} alt="" className="carouselImg"/>
