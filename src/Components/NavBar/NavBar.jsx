@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Icon from '../../Assets/codecell-logo.png'
+import Icon from '../../Assets/logo.png'
 import titleSponsorIcon from "../../Assets/Sponsors/teknowhiteremovebgicon.png"
 
 import "./NavBar.css";
@@ -58,18 +58,8 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <a href="#shortlisted" onClick={closeMenu}>
-                  Sh. Teams
-                </a>
-              </li>
-              <li>
                 <a href="#tracks" onClick={closeMenu}>
                   Tracks
-                </a>
-              </li>
-              <li>
-                <a href="#schedule" onClick={closeMenu}>
-                  Schedule
                 </a>
               </li>
               <li>
@@ -98,10 +88,7 @@ const NavBar = () => {
           <div  className={scrolling ? 'navFull scrolled' : 'navFull glass'}>
           <div className="icon">
           <Link to="home" smooth={true} duration={500}>
-            <img src={Icon} alt="logo" width={60}/> </Link>
-            <h4>X</h4>
-            <Link to="home" smooth={true} duration={500}>
-            <img src={titleSponsorIcon} alt="logo" width={65} className="titlewala"/> </Link>
+            <img src={Icon} alt="logo" width={70} /> </Link>
           </div>
 
             <ul className={scrolling ? 'navList whiteme' : 'navList'}>
@@ -116,18 +103,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="shortlisted" smooth={true} duration={500}>
-                  Shortlisted Teams
-                </Link>
-              </li>
-              <li>
                 <Link to="tracks" smooth={true} duration={500}>
                   Tracks
-                </Link>
-              </li>
-              <li>
-                <Link to="schedule" smooth={true} duration={500}>
-                  Schedule
                 </Link>
               </li>
               <li>

@@ -7,20 +7,6 @@ const Footer = () => {
     <div>
        <footer>
       <div className="container">
-      <div className=" ContactStrap ">
-        <div className=" contactDiv">
-        <FaUser color='#fff' size='30'
-        />
-          <h4 className="text-white">Jagjeet Singh Sappal</h4>
-          <p className="text-white">+91 77189 96469</p>
-        </div>
-        <div className="contactDiv ">
-        <FaUser color='#fff' size='30'
-        />
-          <h4 className="text-white">Mohib Abbas Sayed</h4>
-          <p className="text-white">+91 77180 99523</p>
-        </div>
-      </div>
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-12 col-xs-12">
           
