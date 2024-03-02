@@ -16,7 +16,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Icon1 from '../../Assets/Sale.png'
 import Icon2 from '../../Assets/BigSale.png'
 import Icon3 from '../../Assets/MegaSale.png'
-
+import Icon4 from '../../Assets/SaleMega.png'
+import Icon5 from '../../Assets/SuperSale.png'
+import Icon6 from '../../Assets/FridaySale.png'
+import Icon7 from '../../Assets/MegaOffers.png';
 
 const Home = () => {
   const targetDate = "jan 31, 2024 23:59:59";
@@ -41,6 +44,22 @@ const Home = () => {
           </div>
           <div>
             <img src={Icon3} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon4} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon5} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon6} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon7} alt="" className="carouselImg"/>
             <p className="legend">Legend 1</p>
           </div>
         </Carousel>
