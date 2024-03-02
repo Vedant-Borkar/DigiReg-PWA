@@ -11,6 +11,12 @@ import Sponsors from "../Sponsors/Sponsors";
 import Footer from "../Footer/Footer";
 import titleSponsor from "../../Assets/Sponsors/teknowhiteremovebg.png";
 //import Shortlisted from "../Shortlisted/Shortlisted";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Icon1 from '../../Assets/Sale.png'
+import Icon2 from '../../Assets/BigSale.png'
+import Icon3 from '../../Assets/MegaSale.png'
+
 
 const Home = () => {
   const targetDate = "jan 31, 2024 23:59:59";
@@ -21,9 +27,23 @@ const Home = () => {
   return (
     <div>
       <div className="heroSection" id="home">
-        <div className="navBar">
+      <div className="navBar">
           <NavBar />
         </div>
+        <Carousel className="carousel" infiniteLoop={true}>
+          <div>
+            <img src={Icon1} alt="" className="carouselImg" />
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon2} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+            <img src={Icon3} alt="" className="carouselImg"/>
+            <p className="legend">Legend 1</p>
+          </div>
+        </Carousel>
       </div>
       <div className="aboutSection" id="about">
         <About />
