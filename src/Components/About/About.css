@@ -1,0 +1,113 @@
+.whole_about_section {
+  background-color: #2f2223;
+  padding: 20px 20px 60px 20px;
+  min-height: 70vh;
+  color: #9f9e9e;
+}
+/* .glassy-effect {
+  /* background: rgb(47,34,35);
+background: linear-gradient(180deg, rgba(47,34,35,1) 0%, rgba(222,202,200,0) 0%, rgba(177,68,59,0.5243347338935574) 75%);
+backdrop-filter: blur(20px); 
+border-radius: 10px; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+padding:20px; */
+/* }  */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.card {
+  width: 25%;
+  /* height: 16vh; */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  /* border: 2px solid #9f9e9e; */
+  background-color: rgba(177, 68, 59, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  color: aliceblue;
+  /* box-shadow: 0 0px 20px #d1643d */
+}
+
+.about_heading {
+  text-align: center;
+  padding: 50px 0;
+  font-family: "DaysOne";
+  font-size: 2rem;
+  color: #b1443b;
+}
+
+.second-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-div {
+  width: 38%;
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  padding: 16px;
+  color: aliceblue;
+  /* box-shadow: 0 -2px 20px #d1643d; */
+  background-color: rgba(177, 68, 59, 0.2);
+}
+
+@media (max-width: 678px) {
+  .card{
+    width:100%;
+  }
+  .card-container{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .text_info{
+    font-size: 0.8rem;
+  }
+  .second-container{
+    padding: 0 20px;
+  }
+  .child-div{
+    width:100%;
+  }
+}
+
+@media (max-width: 965px) {
+  .child-div{
+    width:100% ;
+    margin-bottom: 20px;
+  }
+  .second-container{
+    flex-direction: column;
+  }
+}
+
+.inside_image{
+  background-image: url("../../Assets/codecell_team.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: none;
+}
+
+
+.h-44 {
+  height: 12rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+

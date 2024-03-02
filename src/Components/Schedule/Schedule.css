@@ -1,0 +1,247 @@
+.whole_schedule_section {
+    background-color: #2f2223;
+    padding: 20px 20px 60px 20px;
+    /* min-height: cal(8*(200px)) ; */
+    color: #9f9e9e;
+  }
+
+  .whole_line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+.eventContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+.eventTimeLine {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.eventTimeLine ul {
+  list-style: none;
+}
+.motionaldivision {
+  padding: 20px;
+  /* background: rgba(77, 235, 212, 0.63); */
+  /* filter: drop-shadow(0px 16.9315px 8.46576px rgba(0, 0, 0, 0.25)); */
+  background-color: rgba(177, 68, 59, 0.2);
+  /* border-radius: 8px; */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px #d1643d;
+}
+
+.eventTimeLine ul li:last-child {
+  margin-bottom: 0;
+  
+}
+
+.eventTimeLineContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.eventTimeLineContent h1 {
+  /* font-weight: 500; */
+  font-size: 25px;
+  /* line-height: 30px; */
+  margin-bottom: 10px;
+}
+
+.eventTimeLineContent p {
+  font-size: 14px;
+  /* line-height: 30px; */
+  font-weight: 300;
+}
+
+.eventRight {
+  padding-right: 15px;
+  display: flex;
+  min-height: 6rem ;
+  column-gap: 1.5rem;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.dateIcon h2{
+  font-family: 'norwester';
+  /* padding: 10px; */
+}
+.boldme{
+  font-weight: 700 !important;
+}
+.eventLeft {
+  padding-left: 15px;
+  display: flex;
+  min-height: 6rem ;
+  column-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventTimeLine h1 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+@media only screen and (max-width: 949px) {
+  /*D Updates*/
+  .eventTimeLineContent {
+    flex-direction: column;
+  }
+
+  .pastEventPicVertical {
+    min-height: 50vh;
+    margin: 2vh auto;
+    border-radius: 20px;
+  }
+  .pastEventPicHori {
+    min-height: 23vh;
+    margin: 2vh auto;
+    border-radius: 20px;
+    /* min-width: 100%; */
+  }
+
+  .motionaldivision{
+    margin-bottom: 20px !important;
+  }
+  .whole_line{
+    visibility: hidden;
+  }
+
+  .whole_line{
+    height: 160vh;
+  }
+  
+}
+@media only screen and (min-width: 950px) {
+  .eventTimeLine ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 30vh;
+    /* margin-bottom: 20px; */
+  }
+  .eventTimeLine ul li:nth-child(odd) {
+    float: right;
+    clear: left;
+    transform: translateX(-90px);
+    border-radius: 20px 20px 20px 20px;
+    /* box-shadow: 25px 17px 30px #d1643d */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) */
+  }
+  .eventTimeLine ul li:nth-child(even) {
+    float: left;
+    clear: right;
+    transform: translateX(90px);
+    border-radius: 20px 20px 20px 20px;
+    /* box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1) */
+    /* box-shadow: -15px 21px 30px #d1643d; */
+  }
+  .eventTimeLine ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    left: -33px;
+  }
+  .eventTimeLine ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    right: -33px;
+  }
+  .eventTimeLineContent .date {
+    position: absolute;
+    top: -30px;
+  }
+}
+
+
+
+
+.whole_timeline {
+  position: relative;
+}
+
+.eventContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .motionaldivision{
+  margin-bottom: 30vh;
+} */
+
+
+
+
+
+@media only screen and (min-width: 1390px) {
+  .eventTimeLine ul li {
+    margin-bottom: 32.5vh;
+  }
+}
+
+.whole_line img{
+  z-index: 1;
+}
+
+.eventContainer{
+  z-index: 2;
+}
+
+@media (max-width: 600px){
+  .eventContainer{
+    padding-top:5px;
+  }
+  .eventRight{
+    padding-right: 0 ;
+  }
+  .eventTimeLine h1 {
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+.eventTimeLineContent p {
+  font-size: 12px;
+  /* line-height: 30px; */
+  font-weight: 300;
+}
+}
+
+@media (max-width: 1140px){
+  .eventTimeLine ul li {
+    margin-bottom: 34vh;
+  }
+}
+@media (max-width: 1080px){
+  .eventTimeLine ul li {
+    margin-bottom: 31.5vh;
+  }
+}
+
+@media (max-width: 768px){
+  .eventTimeLine ul li {
+    margin-bottom: 0;
+  }
+}
+
+
+

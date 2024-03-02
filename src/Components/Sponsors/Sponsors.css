@@ -1,0 +1,149 @@
+.sponsor-page {
+  padding: 20px;
+  background-color: #2f2223;
+}
+.title{
+  width: 100% !important;
+  text-align: center;
+}
+
+.title img{
+  
+  width: 80% !important;
+  max-width: none !important;
+}
+
+.sponsor-section {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.sponsor-section h2 {
+  text-align: center;
+  position: relative;
+  color: #b1443b;
+  margin-bottom: 40px;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.sponsor-section h2::before,
+.sponsor-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sponsor-section h2::before {
+  left: 0;
+}
+
+.sponsor-section h2::after {
+  right: 0;
+}
+
+.platinum-sponsors {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sponsor {
+  text-align: center;
+  margin: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.sponsort {
+  text-align: center;
+  margin: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.sponsorg {
+  text-align: center;
+  margin: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+.postman{
+  width: 70% !important;
+}
+.sponsor img {
+  max-width: 30vw;
+  width: 80%;
+  height: auto;
+}
+
+.y {
+  font-family: "vtks-madalena";
+  font-size: 6vw;
+}
+
+.title-sponsor {
+  min-height: 30vh;
+}
+
+.sponsorg img {
+  max-width: 20vw;
+  width: 500px;
+  height: auto;
+}
+#redbull{
+  max-width: 40vw !important;
+  width: 600px !important;
+}
+.sponsort img {
+  max-width: 40vw;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .platinum-sponsors {
+    justify-content: center;
+  }
+
+  .title-sponsor {
+    min-height: 16vh !important;
+  }
+
+  .sponsor-section h2 {
+    text-align: center;
+    position: relative;
+    color: #b1443b;
+    margin-bottom: 10px;
+}
+}
+
+.sponsorg p{
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 2vh;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sponsorg p {
+    font-size: 14px; 
+  }
+}

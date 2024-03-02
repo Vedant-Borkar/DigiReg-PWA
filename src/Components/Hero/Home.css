@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #afafaf; 
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B1443B; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B1443B; 
+  }
+.heroSection{
+    width: 100vw;
+    height: 111vh;
+    background-color:#B1443B;
+    background-image: url(../../Assets/desktopwallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content:center;
+    
+}
+.heroHeader{
+    text-align: center;
+    color: #d2d2d2;
+    width: 45%;
+    padding: 0 10px;
+}
+.heroHeader p{
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-family: 'DaysOne';
+}
+.titlewala{
+    opacity: 75%;
+}
+.heroHeader img{
+    width: 650px;
+}
+.heroTimer{
+    padding: 0 5px;
+}
+.glassTimer {
+    /* background: rgba(255, 255, 255, 0.1); */
+background: #873933;
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding:20px;
+  
+  }
+.timerDiv{
+    display: flex;
+    color: #2F2223;
+    font-family: 'DaysOne';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.timerDiv h1{
+    font-family: 'DaysOne';
+    padding: 10px 0;
+    font-size: 1.8rem;
+}
+.timerBox{
+    display: flex;
+    column-gap: 2.8rem;
+    padding: 20px 10px 10px 10px;
+}
+.indvSection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+.indvSection p{
+    font-size:1.2rem;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom:0px !important;
+}
+.timerIndvBox{
+    width: 140px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer{
+    margin-top: 150px;
+}
+.timerfont{
+    color: #000;
+
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.heroTimer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.regButtonDiv{
+    margin: 10px 0;
+}
+.regBtn{
+    background: #2F2223;
+    padding: 15px 30px;
+    font-family: 'DaysOne';
+    text-transform: uppercase;
+    letter-spacing:2px;
+    color: #B1443B;
+    outline: none;
+    opacity: 85%;
+    border-radius: 18px;
+}
+.regBtn:hover{
+    cursor: pointer;
+    background: #b1453b;
+    padding: 15px 30px;
+    font-family: 'DaysOne';
+    text-transform: uppercase;
+    letter-spacing:2px;
+    color: #2f2223;
+    outline: none;
+    border: 3px solid #2f2223;
+    border-radius: 7px;
+}
+
+
+
+
+ 
+@media screen and (max-width: 968px) {
+    .heroHeader img {
+        max-width: 100%; 
+        /* margin-top:6vh; */
+    }
+    .hero{
+        flex-direction: column;
+        /* height: ; */
+    }
+
+    .heroSection{
+        /* height:106%; */
+        background-image: url("../../Assets/desktopwallpaper.png");
+        width:100%;
+    }
+
+    .timerDiv h1{
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    .indvSection p{
+        color: white;
+    }
+} 
+
+
+@media screen and (max-width: 652px) {
+     .heroHeader img {
+         max-width: 100%; 
+         /* margin-top:6vh; */
+     }
+     .hero{
+         flex-direction: column;
+         justify-content: flex-start;
+         padding-top:10rem;
+         /* height: ; */
+     }
+     .heroHeader{
+        text-align: center;
+        color: #d2d2d2;
+        width: 100%;
+        padding: 0 10px;
+    }
+ 
+     .heroSection{
+         background-image: url("../../Assets/mobilewallpaper.png");
+         width:100%;
+     }
+     .timerDiv{
+        margin: 0 20px;
+     }
+ 
+     .timerDiv h1{
+         font-size: 1.5rem ;
+         color: #fff;
+     }
+ 
+     .indvSection p{
+         color: #000;
+     }
+
+
+     .timerBox {
+        width: 100%;
+       padding: 20px 5px 10px 5px;
+       flex-wrap: wrap;
+       column-gap: 0.2rem;
+       row-gap: 1rem;
+       justify-content: space-between;
+   }
+
+   .indvSection {
+       text-align: center;
+   }
+
+   .timerIndvBox {
+       width: 80px;
+       height: 80px;
+   }
+   .timerIndvBox p{
+    font-size: 0.7rem;
+   }
+
+    .timerfont {
+        font-size: 1.2rem;
+    }
+
+    
+ } 
+
+ @media screen and (max-width: 400px) {
+    .heroHeader img {
+        max-width: 100%; 
+        margin-top:0;
+    }
+    .hero{
+        flex-direction: column;
+        row-gap: 3rem;
+        row-gap: 0;
+        /* justify-content: space-between; */
+        /* height: ; */
+    }
+
+    .heroSection{
+        background-image: url("../../Assets/mobilewallpaper.png");
+        width:100%;
+    }
+    .timerDiv{
+       margin: 0 20px;
+    }
+
+    .timerDiv h1{
+        font-size: 1.5rem ;
+        color: #fff;
+    }
+
+    .indvSection p{
+        color: #000;
+    }
+
+
+    .timerBox {
+        width: 100%;
+       padding: 20px 5px 10px 5px;
+       flex-wrap: wrap;
+       column-gap: 0.2rem;
+       row-gap: 1rem;
+       justify-content: space-between;
+   }
+
+   .indvSection {
+       text-align: center;
+   }
+
+   .timerIndvBox {
+       width: 80px;
+       height: 80px;
+       border-radius: 15px;
+   }
+   .timerIndvBox p{
+    font-size: 0.7rem;
+   }
+
+   .timerfont {
+       font-size: 1.2rem;
+   }
+
+   
+}
+
+
+@media screen and (max-width: 376px) {
+    .heroHeader img {
+        max-width: 100%; 
+        margin-top:0;
+    }
+    .hero{
+        flex-direction: column;
+        row-gap: 3rem;
+        row-gap: 0;
+        /* justify-content: space-between; */
+        /* height: ; */
+    }
+
+    .heroSection{
+        background-image: url("../../Assets/mobilewallpaper.png");
+        width:100%;
+    }
+    .timerDiv{
+       margin: 0 20px;
+    }
+
+    .timerDiv h1{
+        font-size: 1.5rem ;
+        color: #fff;
+    }
+
+    .indvSection p{
+        color: #000;
+    }
+
+
+    .timerBox {
+        width: 100%;
+       padding: 20px 5px 10px 5px;
+       flex-wrap: wrap;
+       column-gap: 0rem;
+       row-gap: 1rem;
+       justify-content: space-between;
+   }
+
+   .indvSection {
+       text-align: center;
+   }
+
+   .timerIndvBox {
+       width: 70px;
+       height: 80px;
+   }
+   .timerIndvBox p{
+    font-size: 0.6rem;
+   }
+
+   .timerfont {
+       font-size: 1.2rem;
+   }
+
+   
+}

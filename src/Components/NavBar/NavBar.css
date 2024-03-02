@@ -1,0 +1,226 @@
+body{
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 10;
+  }
+
+  .iconToggle{
+    right: 0;
+  }
+  .whiteme{
+    color: #dbdbdb !important;
+  }
+  .scrolled {
+    color: #dbdbdb !important; /* Change to your desired color */
+     background: rgba(255, 255, 255, 0.1) !important;
+     /* background: rgb(48,34,35); */
+     background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, rgba(177,68,59,1) 100%);
+         backdrop-filter: blur(4px); 
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+         /* padding:20px; */
+         border-radius: 0px !important;
+
+  }
+  
+  .menuToggle {
+    display: block;
+    position: relative;
+    /* top: 50px; */
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .menuToggle a {
+    text-decoration: none;
+    color: #b1443b;
+    transition: all 0.3s ease;
+  }
+  .menuToggle a:hover {
+    color: tomato;
+  }
+  .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  .menuToggle span {
+    position: relative;
+    display: block;
+    width: 33px;
+    height: 4px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    /* border-radius: 3px; */
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  .menuToggle input:checked ~ .menuItem {
+    transform: none;
+  }
+  
+  .menuItem {
+    position: absolute;
+    width: 300px;
+    height: 110vh;
+    padding: 125px 70px 70px 100px;
+    /* padding-top: 125px; */
+    background: #ededed;
+    list-style-type: none;
+    color: #b1443b;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  .menuItem li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #b1443b;
+  }
+  
+  .menu--left {
+    display: none;
+    position: relative;
+    width: 100%;
+  }
+  .menu--left .menuToggle {
+    top: 10px;
+    left: -20px;
+  }
+  .menu--left .menuToggle input {
+    left: 50px;
+  }
+  .menu--left .menuToggle span {
+    left: 50px;
+  }
+  .menu--left .menuItem {
+    left: 50px;
+    margin: -100px 0 0 -50px;
+    transform: translate(-100%, 0);
+  }
+  @keyframes text-slide-in {
+    0% {
+      -webkit-transform: translateX(100px);
+      -moz-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      -o-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+.navFull{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+    padding: 0px 55px;
+    width: 100vw;
+    z-index: 1000;
+    font-size: 1.1rem;
+}
+.navList{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    column-gap: 3rem;
+    justify-content: end;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232323;
+    padding: 30px 10px;
+    margin-bottom: 0px !important;
+}
+.glass {
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgb(48,34,35);
+background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, rgba(177,68,59,1) 100%);
+    backdrop-filter: blur(4px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+    /* padding:20px; */
+    border-radius: 0px !important;
+  
+  }
+  .navList li{
+    padding-bottom: 4px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+  }
+  .navList li:hover{
+    color: #cdcdcd;
+    
+    transition: ease-in-out;
+    cursor: pointer;
+  }
+
+@media (max-width: 600px){
+    .menu--left{
+        display: flex;
+        flex-direction: row;
+        height: 90px;
+        align-items: center;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .iconToggle{
+      padding: 30px 30px 10px 0px;
+    }
+    .navFull{
+        display: none;
+    }
+}
+.icon{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: #291f19;
+}
+.navFull a{
+text-decoration: none;
+color:#291f19;
+}
+
+.navFull a:hover{
+  color: #cdcdcd;
+}

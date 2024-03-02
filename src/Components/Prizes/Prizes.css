@@ -1,0 +1,68 @@
+.price_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.prizes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.item1{
+    grid-column: 1/ span 2;
+}
+.price_image img{
+
+    width: 450px;
+  height: auto
+}
+
+
+.whole_price_section{
+    background: #2f2223;
+    padding-bottom: 5rem;
+}
+
+.x{
+    font-family: 'vtks-madalena';
+    font-size: 8vw;
+}
+.xs{
+    font-family: 'vtks-madalena';
+    font-size: 8vw;
+}
+
+
+@media (max-width: 600px){
+    .about_heading{
+        padding: 50px 0 30px 0;
+    }
+    .x{
+        font-family: 'vtks-madalena';
+        font-size: 18vw;
+    }
+    .xs{
+        font-family: 'vtks-madalena';
+        font-size: 13vw;
+    }
+    .prizes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .item1{
+        grid-column: 1;
+    }
+    .price_image img{
+
+        width: 300px;
+      height: auto
+    }
+
+}
+
+
+

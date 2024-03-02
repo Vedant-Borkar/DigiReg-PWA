@@ -1,0 +1,106 @@
+.containert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  table {
+    width: 90vw;
+    height: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+  }
+  th,
+  td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  th {
+    text-align: center;
+  }
+  thead th {
+    background-color: #b1443b;
+  }
+  td{
+    text-align: center;
+  }
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  tbody td {
+    position: relative;
+  }
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+
+  
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 14px;
+    }
+    .search-bar input {
+      width: 85%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  }
+  }
+  @media (max-width: 470px) {
+    th, td {
+      font-size: 14px;
+    }
+    .search-bar input {
+      width: 85% !important;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  }
+  }
+
+
+  @media (min-width: 976px) {
+ table{
+    width: 75vw;
+    height: auto;
+ }
+  }
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .no-teams-message{
+    text-align: center;
+    color:white;
+  }
+  
+  .search-bar input {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
