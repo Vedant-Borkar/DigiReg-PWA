@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           <div>
             <img src={Icon4} alt="" className="carouselImg"/>
-            <p className="legend">Legend 1</p>
+            <p className="legend">Legend 3</p>
           </div>
           <div>
             <img src={Icon5} alt="" className="carouselImg"/>
