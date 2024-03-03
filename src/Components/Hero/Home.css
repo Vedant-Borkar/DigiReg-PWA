@@ -26,8 +26,7 @@
 }
 .heroSection{
     width: 100vw;
-    height: 100vh;
-    overflow:hidden;
+    height: 111vh;
     background-color:#B1443B;
     background-repeat: no-repeat;
     background-size: cover;
