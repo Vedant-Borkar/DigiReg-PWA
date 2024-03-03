@@ -44,7 +44,7 @@ const Home = () => {
           </div>
           <div>
             <img src={Icon3} alt="" className="carouselImg"/>
-            <p className="legend">Legend 1</p>
+            <p className="legend">Legend 2</p>
           </div>
           <div>
             <img src={Icon4} alt="" className="carouselImg"/>
