@@ -21,7 +21,7 @@ header {
     color: #dbdbdb ; /* Change to your desired color */
      background: rgba(255, 255, 255, 0.1) ;
      /* background: rgb(48,34,35); */
-     background: linear-gradient(180deg, rgb(23, 86, 141) 0%, rgb(35, 35, 149) 16%, rgb(136, 4, 138) 100%);
+    background: linear-gradient(180deg, rgb(23, 86, 141) 0%, rgb(35, 35, 149) 16%, rgb(136, 4, 138) 100%);
          backdrop-filter: blur(4px); 
          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
          /* padding:20px; */
@@ -189,7 +189,7 @@ background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, r
     /* letter-spacing: 1px; */
   }
   .navList li:hover{
-    color: #cdcdcd;
+    color: #dbdbdb;
     
     transition: ease-in-out;
     cursor: pointer;
@@ -219,9 +219,10 @@ background: linear-gradient(180deg, rgba(48,34,35,1) 0%, rgba(89,45,42,1) 16%, r
 }
 .navFull a{
 text-decoration: none;
-color:#291f19;
+color:black;
 }
 
 .navFull a:hover{
   color: #cdcdcd;
 }
+

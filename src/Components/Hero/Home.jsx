@@ -36,7 +36,7 @@ const Home = () => {
         <div className="navBar">
           <NavBar />
         </div>
-        <Carousel className="carousel" infiniteLoop={true}>
+        <Carousel className="carousel" infiniteLoop={true} autoPlay={true} transitionTime={1} >
           <div>
             <img src={Icon1} alt="" className="carouselImg" />
             <p className="legend">Legend 0</p>
@@ -69,9 +69,9 @@ const Home = () => {
       </div>
       
       
-      <div className="aboutSection" id="about">
+      {/* <div className="aboutSection" id="about">
         <About />
-      </div>
+      </div> */}
       <div className="tracks_section" id="tracks">
         <Tracks />
       </div>

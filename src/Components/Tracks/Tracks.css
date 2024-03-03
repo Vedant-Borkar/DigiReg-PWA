@@ -1,8 +1,12 @@
 .whole_track_section {
-    background-color: #2f2223;
+    background-color: #e7c9f9;
     padding: 20px 20px 60px 20px;
     min-height: 70vh;
     color: #9f9e9e;
+  }
+
+  .x{
+    color:#012552;
   }
   .domainsDiv{
     display: flex;
@@ -12,9 +16,49 @@
     justify-content: center;
   }
   .domain{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     padding: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+    height: 50vh;
+    align-items: center;
+    border-radius: 30px;
     
+  }
+
+  .img1{
+     margin-top: 40px;
+     background-size: cover;
+     width: 300px;
+     height:200px;
+  }
+
+  .img2{
+    margin-top: 40px;
+    background-size: cover;
+    width: 300px;
+    height:200px;
+ }
+
+ .img3{
+  margin-top: 40px;
+  background-size: cover;
+  width: 300px;
+  height:200px;
+}
+
+.img4{
+  margin-top: 40px;
+  background-size: cover;
+  width: 300px;
+  height:200px;
+}
+
+  .img-content{
+    margin-top: 35px;
+    font-size: 30px;
+    color: black;
   }
   
 

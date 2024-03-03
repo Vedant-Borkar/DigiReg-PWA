@@ -87,38 +87,38 @@ const NavBar = () => {
         <nav>
           <div  className={scrolling ? 'navFull scrolled' : 'navFull glass'}>
           <div className="icon">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} > 
             <img src={Icon} alt="logo" width={70} /> </Link>
           </div>
 
             <ul className={scrolling ? 'navList whiteme' : 'navList'}>
               <li>
-                <Link to="home" smooth={true} duration={500}>
+                <Link to="home" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   Homie
                   </Link>
               </li>
               <li>
-                <Link to="about" smooth={true} duration={500}>
+                <Link to="about" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="tracks" smooth={true} duration={500}>
+                <Link to="tracks" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   Tracks
                 </Link>
               </li>
               <li>
-                <Link to="prizes" smooth={true} duration={500}>
+                <Link to="prizes" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   Prizes
                 </Link>
               </li>
               <li>
-                <Link to="sponsors" smooth={true} duration={500}>
+                <Link to="sponsors" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   Sponsors
                 </Link>
               </li>
               <li>
-                <Link to="faqs" smooth={true} duration={500}>
+                <Link to="faqs" smooth={true} duration={500} className={scrolling ? 'whiteme' : ''}>
                   Faqs
                 </Link>
               </li>

@@ -22,14 +22,19 @@
     background: #B1443B; 
   }
 .carouselImg{
-    height: 111vh;
+    height: 100vh;
 }
 .heroSection{
-    width: 100vw;
-    height: 111vh;
-    background-color:#B1443B;
-    background-repeat: no-repeat;
-    background-size: cover;
+     
+        width: 100vw;
+        height: 100vh;
+        background-color: #B1443B;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-image 0.1s ease; 
+        overflow: hidden;
+    
+    
 }
 .hero{
     display: flex;
@@ -100,7 +105,7 @@ background: #873933;
 .indvSection p{
     font-size:1.2rem;
     letter-spacing: 1px;
-    color: #000;
+    color: #e00202;
     margin-bottom:0px !important;
 }
 .timerIndvBox{
